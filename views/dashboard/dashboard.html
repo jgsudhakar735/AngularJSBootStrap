@@ -1,0 +1,61 @@
+<div class="row">
+<div class="span6">
+  <div class="widget widget-nopad">
+	<div class="widget-header"> <i class="icon-list-alt"></i>
+	  <h3> Students Data</h3>
+	</div>
+	<!-- /widget-header -->
+	<div class="widget-content" ng-controller="studentStatsController">
+	  <ul class="news-items" ng-show="data.success">
+		<li ng-repeat="student in data.studentList | limitTo : 3">
+		  
+		  <div class="news-item-date"> <!--<span class="news-item-day">{{student.studentFirstName}}</span> <span class="news-item-month">{{student.studentlastName}}</span>--> </div>
+		  <div class="news-item-detail"> <a href="javascript:;" class="news-item-title">{{student.studentFirstName }}    {{student.studentlastName}}</a>
+			<p class="news-item-preview">Student Email ID:  {{student.studentEmail}} and Mobile Number is : {{student.studentMobile}}  and studying {{student.studentClass}}</p>
+		  </div>
+		</li>
+        <li ng-show="data.studentList.length > 3">
+                    <a ng-href="#/students" class="news-item-title">View More</a>
+        </li> 
+	  </ul>
+	  <div ng-show="data.error" class="alert">
+		<strong>Error!</strong> {{data.errorMsg}}
+	  </div>
+	</div>
+	<!-- /widget-content --> 
+  </div>
+  <!-- /widget -->
+</div>
+<!-- /span6 -->
+<div class="span6">
+ <div class="span6">
+  <div class="widget widget-nopad">
+	<div class="widget-header"> <i class="icon-list-alt"></i>
+	  <h3> Employees Data</h3>
+	</div>
+	<!-- /widget-header -->
+	<div class="widget-content" ng-controller="employeeStatsController">
+        <ul class="news-items" ng-show="data.success">
+                <li ng-repeat="employee in data.employeeList | limitTo : 3">
+                  <div class="news-item-date"> <!--<span class="news-item-day">{{employee.employeeFirstName}}</span> <span class="news-item-month">{{student.employeelastName}}</span>--> </div>
+                  <div class="news-item-detail"> <a href="javascript:;" class="news-item-title">{{employee.employeeFirstName}}    {{employee.employeelastName}}</a>
+                    <p class="news-item-preview">Employee Designation:  {{employee.employeeDesignation}} and Mobile Number is : {{employee.employeeMobile}}</p>
+                  </div>
+                </li>
+                <li ng-show="data.employeeList.length > 3">
+                    <a ng-href="#/employees" class="news-item-title" >View More</a>
+                </li>
+	   </ul>
+	  <div ng-show="data.error" class="alert">
+		<strong>Error!</strong> {{data.errorMsg}}
+	  </div>
+	</div>
+	<!-- /widget-content --> 
+  </div>
+  <!-- /widget -->
+</div>
+  
+</div>
+<!-- /span6 --> 
+</div>
+<!-- /row --> 

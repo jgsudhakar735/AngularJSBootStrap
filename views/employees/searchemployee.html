@@ -1,0 +1,54 @@
+<div class="row">
+<!-- /span6 -->
+<div class="span12">
+  <div class="widget widget-table action-table">
+	<div class="widget-header"> <i class="icon-th-list"></i>
+	  <h3>Search Employee</h3>
+	</div>
+	<!-- /widget-header -->
+	<div class="widget-content">
+        <div>
+        <fieldset>
+						
+						<div class="control-group">											
+							<label class="control-label" for="username">Employee Number</label>
+							<div class="controls">
+								<input type="text" class="span4 disabled" id="username" ng-model="enteredEmpId">&#160;&#160;&#160;<a href="javascript:;" ng-click="searchEmployee()" class="btn btn-small btn-success"><i class="icon-search"></i></a>
+								
+							</div> <!-- /controls -->				
+						</div>
+            </fieldset>
+        </div>    
+        
+	  <table class="table table-striped table-bordered" ng-show="isShow">
+		<thead>
+		  <tr>
+			<th> First Name </th>
+			<th> Last Name</th>
+			<th> Designation </th>
+            <th> Email </th>
+            <th> Mobile No </th>
+			<th class="td-actions"> </th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr ng-show="isSuccess">
+			<td> {{data.employeeFirstName}} </td>
+			<td> {{data.employeelastName}} </td>
+            <td> {{data.employeeDesignation}} </td>
+			<td> {{data.employeeEmail}} </td>
+            <td> {{data.employeeMobile}} </td>
+			<td class="td-actions"><a href="javascript:;" ng-click="employeeDetails(data.employeeNumber,'View')" class="btn btn-small btn-success"><i class="icon-search"></i></a><a href="javascript:;" ng-click="employeeDetails(data.employeeNumber,'Edit')" class="btn btn-danger btn-small"><i class="icon-edit"></i></a><a href="javascript:;" ng-click="employeeDetails(data.employeeNumber,'Delete')" class="btn btn-danger btn-small"><i class="icon-remove"></i></a></td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+	<!-- /widget-content --> 
+  </div>
+  <!-- /widget --> 
+
+  
+</div>
+<!-- /span6 --> 
+</div>
+<!-- /row --> 

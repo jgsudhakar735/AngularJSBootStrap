@@ -1,0 +1,60 @@
+<div class="row">
+<div class="span12">
+ <div class="widget widget-nopad">
+    <div class="widget-header"> <i class="icon-list-alt"></i>
+	  <h3> Delete Student Pre-Confirmation</h3>
+	</div>
+		<div class="widget-content">
+	  <div class="widget big-stats-container">
+		<div class="widget-content" style="padding:10px;">
+		
+		  <div>
+<div>
+
+		<fieldset>
+			
+			<div class="control-group">											
+				<label class="control-label" for="firstname">First Name</label>
+				<div class="controls">
+					{{data.employeeFirstName}}
+				</div> <!-- /controls -->				
+			</div> <!-- /control-group -->
+			
+			
+			<div class="control-group">											
+				<label class="control-label" for="lastname">Last Name</label>
+				<div class="controls">
+					{{data.studentlastName}}
+				</div> <!-- /controls -->				
+			</div> <!-- /control-group -->
+			
+			
+			<div class="control-group">											
+				<label class="control-label" for="email">Email Address</label>
+				<div class="controls">
+					{{data.studentEmail}}
+				</div> <!-- /controls -->				
+			</div> <!-- /control-group -->
+			
+			<div class="control-group">											
+				<label class="control-label" for="phone">Class</label>
+				<div class="controls">
+					{{data.studentClass}}
+				</div> <!-- /controls -->				
+			</div> <!-- /control-group -->
+			
+			<div class="control-group">											
+				<label class="control-label" for="bio">Mobile No</label>
+				<div class="controls">
+					{{data.studentMobile}}
+				</div> <!-- /controls -->				
+			</div> <!-- /control-group -->
+			
+			<div style="text-align:center;width=100%">
+				<button type="button" class="btn btn-primary" ng-click="deleteStudent(data.studentNumber)">Delete</button> 
+				<button ng-click="studentList()" class="btn">Cancel</button>
+			</div>
+		</fieldset>
+								
+</div>
+            </div></div></div></div></div></div></div>

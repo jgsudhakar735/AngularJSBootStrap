@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" id="ng-app" ng-app="myApp" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jaya Govind Infotech Sample Angular JS Application</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="css/ng-table.min.css" rel="stylesheet">
+	<link href="css/angular-chart.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/dashboard.css" rel="stylesheet">
+	<link href="css/signin.css" rel="stylesheet">
+</head>
+<body>
+   <div ng-include="'views/login/loginheader.html'" ng-show="!userInfo"></div> <!-- loginHeader -->
+   <div ng-include="'views/login/userHeader.html'" ng-show="userInfo"></div> <!-- userHeader -->	
+   	
+   <div class="main">
+		<div class="main-inner">
+			<div class="container" ui-view>
+			</div>
+		</div>
+	</div>
+   	
+   <div ng-include="'views/login/loginFooter.html'"></div> <!-- footer -->
+
+    <script src="jquery/jquery-1.11.0.js"></script>
+	<script src="angularjslib/angular-chart.js"></script>
+	
+	<script src="angularjslib/angular.min.js"></script>
+	<script src="angularjslib/angular-ui-router.min.js"></script>	
+	<script src="angularjslib/ng-table.min.js"></script>
+		
+	<script src="bootstrap/bootstrap.min.js"></script> 
+	
+	<script src="bootstrap/ui-bootstrap.min.js"></script>
+	<script src="bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="angularjslib/angular-validation.js"></script>
+	<script src="angularjslib/angular-validation-rule.js"></script>
+	<script src="angularjslib/angular-chart.js"></script>
+			
+	<script src="app.js"></script>
+	<script src="customjslib/login/login.js"></script>
+    <script src="services/ServerUrl.js"></script>
+    <script src="services/UserServices.js"></script>
+    <script src="customjslib/dashboard/dashboard.js"></script>
+    <script src="services/DashBoardServices.js"></script>
+    <script src="customjslib/students/students.js"></script>
+    <script src="services/StudentServices.js"></script>
+    <script src="services/EmployeeService.js"></script>
+    <script src="customjslib/employees/employees.js"></script>
+	<!--<script src="partials/dashboard/dashboard.js"></script>
+	<script src="partials/reports/reports.js"></script>
+	<script src="partials/customers/customers.js"></script>-->
+</body>
+</html>

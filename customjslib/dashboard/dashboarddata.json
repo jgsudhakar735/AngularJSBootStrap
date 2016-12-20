@@ -1,0 +1,72 @@
+{
+    "success": "true",
+    "studentList" :[
+        {
+            "studentNumber":"1",
+            "studentFirstName" :"Sudhakar",
+            "studentlastName" : "Tangellapalli",
+            "studentClass":"MCA",
+            "studentEmail" : "abc@abc.com",
+            "studentMobile" :"1234567891"
+        },{
+            "studentNumber":"2",
+            "studentFirstName" :"Venkateswarlu",
+            "studentlastName" : "Tangellapalli",
+            "studentEmail" : "abc@abc.com",
+            "studentClass":"Degree",
+            "studentMobile" :"1234567891"
+        },{
+            "studentNumber":"3",
+            "studentFirstName" :"Govindaiah",
+            "studentlastName" : "Tangellapalli",
+            "studentEmail" : "abc@abc.com",
+            "studentClass":"Phd",
+            "studentMobile" :"1234567891"
+        },{
+            "studentNumber":"4",
+            "studentFirstName" :"Malli",
+            "studentlastName" : "Yeturu",
+            "studentEmail" : "abc@abc.com",
+            "studentClass":"Phd",
+            "studentMobile" :"1234567891"
+        }
+    ],
+    "employeeList" :[
+        {
+            "employeeNumber":"1",
+            "employeeFirstName" :"Narasimha",
+            "employeelastName" : "M",
+            "employeeEmail" : "abc@abc.com",
+            "employeeDesignation":"Senior Product Engineer",
+            "employeeMobile" :"1234567891"
+        },{
+            "employeeNumber":"2",
+            "employeeFirstName" :"Venkateswarlu",
+            "employeelastName" : "T",
+            "employeeEmail" : "abc@abc.com",
+            "employeeDesignation":"Product Engineer",
+            "employeeMobile" :"1234567891"
+        },{
+            "employeeNumber":"3",
+            "employeeFirstName" :"Shafi",
+            "employeelastName" : "Sk",
+            "employeeEmail" : "abc@abc.com",
+            "employeeDesignation":"Product Manager",
+            "employeeMobile" :"1234567891"
+        },{
+            "employeeNumber":"4",
+            "employeeFirstName" :"Sandeep",
+            "employeelastName" : "C",
+            "employeeEmail" : "abc@abc.com"
+            "employeeDesignation":"Product Engieer",
+            "employeeMobile" :"1234567891"
+        },{
+            "employeeNumber":"5",
+            "employeeFirstName" :"Manikanta",
+            "employeelastName" : "B",
+            "employeeEmail" : "abc@abc.com",
+            "employeeDesignation":"Product Developer",
+            "employeeMobile" :"1234567891",
+        }
+    ]
+}

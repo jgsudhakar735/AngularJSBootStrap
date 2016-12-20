@@ -1,0 +1,85 @@
+<div class="row">
+<div class="span12">
+ <div class="widget widget-nopad">
+    <div class="widget-header"> <i class="icon-list-alt"></i>
+	  <h3> Edit Employee Details</h3>
+	</div>
+		<div class="widget-content">
+	  <div class="widget big-stats-container">
+		<div class="widget-content" style="padding:10px;">
+		
+		  <div>
+	<form id="edit-profile" novalidate name="editCustomerForm" autocomplete="off" class="form-horizontal">
+		<fieldset>
+			
+			<div class="control-group">											
+				<label class="control-label" for="username">Employee Number</label>
+				<div class="controls">
+					<input type="text" class="span4 disabled" id="username" value="{{data.employeeNumber}}" disabled>
+				</div> <!-- /controls -->				
+			</div> <!-- /control-group -->
+			
+			
+			<div class="control-group">											
+				<label class="control-label" for="firstname">First Name<sup>*</sup></label>
+				<div class="controls">
+					<input class="span4" name="firstname" placeholder="First Name" ng-model="data.employeeFirstName" 
+  validator="required" required-error-message="First Name is required" valid-method="watch" />	
+				</div> <!-- /controls -->				
+			</div> <!-- /control-group -->
+			
+			
+			<div class="control-group">											
+				<label class="control-label" for="lastname">Last Name<sup>*</sup></label>
+				<div class="controls">
+					<input class="span4" name="lastname" placeholder="Last Name" ng-model="data.employeelastName" 
+  validator="required" required-error-message="Last Name is required" valid-method="watch" />
+				</div> <!-- /controls -->				
+			</div> <!-- /control-group -->
+			
+			
+			<div class="control-group">											
+				<label class="control-label" for="email">Email Address<sup>*</sup></label>
+				<div class="controls">
+					<input class="span4" name="email" placeholder="Email" ng-model="data.employeeEmail" 
+  validator="required, email" required-error-message="Email is required" email-error-message="Invalid email address" valid-method="watch" />
+				</div> <!-- /controls -->				
+			</div> <!-- /control-group -->
+			
+			<div class="control-group">											
+				<label class="control-label" for="phone">Phone<sup>*</sup></label>
+				<div class="controls">
+					<input class="span4" name="phone" placeholder="Phone" ng-model="data.employeeMobile" 
+  validator="required" required-error-message="Phone is required" valid-method="watch" />
+				</div> <!-- /controls -->				
+			</div> <!-- /control-group -->
+			<div class="control-group">											
+				<label class="control-label" for="phone">Designation<sup>*</sup></label>
+				<div class="controls">
+					<input class="span4" name="phone" placeholder="Phone" ng-model="data.employeeDesignation" 
+  validator="required" required-error-message="Phone is required" valid-method="watch" />
+				</div> <!-- /controls -->				
+			</div>
+			<!--<div class="control-group">											
+				<label class="control-label" for="Country">Country<sup>*</sup></label>
+				<div class="controls">
+					<select class="span4" name="country" ng-model="customer.country" 
+  validator="required" required-error-message="Country is required" valid-method="watch">
+					<option value="">Select Country</option>
+					<option value="United States">United States</option>
+					<option value="United Kingdom">United Kingdom</option>
+					<option value="India">India</option>
+					<option value="Australia">Australia</option>
+					</select>
+				</div> 
+			</div> -->
+				
+			<div style="text-align:center;width=100%">
+				<button type="button" class="btn btn-primary" validation-submit="editCustomerForm" ng-click="updateEmployee(data.employeeNumber)">Update</button> 
+				<button ng-click="employeeList()" class="btn">Cancel</button>
+			</div> <!-- /form-actions -->
+		</fieldset>
+              </form></div></div></div></div>
+  </div>	
+    </div>
+</div>
