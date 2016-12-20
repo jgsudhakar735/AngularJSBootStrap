@@ -6,21 +6,21 @@
             "userEmail" : "jgsudhakar735@gmail.com",
             "userPwd" : "mypassword",
             "userDesgination":"Senior Product Engineer",
-            "userMobile" :"8939345165"
+            "userMobile" :"123456789"
         },{
             "userfirstName" :"Venkateswarlu",
             "userlastName" : "Tangellapalli",
             "userEmail" : "venky8395@gmail.com",
             "userPwd" : "mypassword",
             "userDesgination":"Product Engineer",
-            "userMobile" :"9550502810"
+            "userMobile" :"123465798"
         },{
             "userfirstName" :"Govindaiah",
             "userlastName" : "Tangellapalli",
             "userEmail" : "govind@gmail.com",
             "userPwd" : "mypassword",
             "userDesgination":"Product Manager",
-            "userMobile" :"9849413114"
+            "userMobile" :"123465798"
         }
     ]
 }
