@@ -48,11 +48,11 @@ myApp.config(function($stateProvider) {
     
 });
 
-myApp.controller('employeeSearchController', ['$scope', 'EmployeeService','$http','$location', function($scope, EmployeeService,$http,$location) {
+myApp.controller('employeeSearchController', ['$scope', 'EmployeeServices','$http','$location', function($scope, EmployeeServices,$http,$location) {
     
-    $scope.enteredEmpId =  "101";
+    $scope.enteredEmpId =  "";
     $scope.data = {};
-    $scope.isShow =false;
+    $scope.isSuccess =false;
     // getting the next employee number 
     
     $scope.searchEmployee = function(){
@@ -63,19 +63,19 @@ myApp.controller('employeeSearchController', ['$scope', 'EmployeeService','$http
            for(var i = 0; i <EMPLOYEE_LIST.employeeList.length;i++){
                 if(EMPLOYEE_LIST.employeeList[i].employeeNumber == $scope.enteredEmpId){
                    $scope.data =  EMPLOYEE_LIST.employeeList[i];
-                    $scope.isShow = true;
+                    $scope.isSuccess = true;
                     break;
                 }
             }
            if(jQuery.isEmptyObject($scope.data) ){
-               $scope.enteredStuId =  "";
+               $scope.enteredEmpId =  "";
                alert('No records found !')
            }
         }
     }
      $scope.employeeDetails = function(employeeNo,operation){
 
-        EmployeeService.setEmpId(employeeNo);
+        EmployeeServices.setEmpId(employeeNo);
 
         if(operation == 'View')    
          $location.path("/employeesDetails");   
