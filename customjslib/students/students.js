@@ -56,6 +56,10 @@ myApp.controller('studentController', ['$scope', 'StudentsServices','$http','$lo
     var nextEmpIdIs = Math.max.apply(null,nextEmpIdAry);
     $scope.student = {"studentFirstName":"","studentlastName" : "","studentEmail" : "","studentMobile":"","studentClass" :"","studentNumber":nextEmpIdIs+1}
 
+        $scope.addStudent = function(){
+        STUDENT_LIST.studentList.push($scope.student);
+        $location.path("/dashboard");
+    }
     
     $scope.cancel = function(){
         $location.path("/editdeletestudent");
