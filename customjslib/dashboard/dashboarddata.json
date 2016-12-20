@@ -58,7 +58,7 @@
             "employeeFirstName" :"Sandeep",
             "employeelastName" : "C",
             "employeeEmail" : "abc@abc.com"
-            "employeeDesignation":"Product Engieer",
+            "employeeDesignation" : "Product Engieer",
             "employeeMobile" :"1234567891"
         },{
             "employeeNumber":"5",
@@ -66,7 +66,7 @@
             "employeelastName" : "B",
             "employeeEmail" : "abc@abc.com",
             "employeeDesignation":"Product Developer",
-            "employeeMobile" :"1234567891",
+            "employeeMobile" :"1234567891"
         }
     ]
 }
